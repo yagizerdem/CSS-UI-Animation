@@ -1,0 +1,130 @@
+i{
+    color: white;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+.col{
+    float: left;
+    text-align: center;
+    height: 100vh;
+}
+#col1{
+    box-sizing: border-box; 
+    width: 20%;
+    background-color: rgb(0, 0, 0); 
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid white;
+}
+#col2{
+    background-color: black;
+    width: 55%;
+    max-height: 100vh;
+    overflow-y:auto ;
+}
+.left_bar_columns{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.left_bar_columns:last-of-type{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    
+}
+#profile_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+div img{
+   width: 60px;
+   border: 1px solid black;
+   border-radius: 50px;
+   outline: 3px solid purple;
+}
+.post_infos{
+    background-color: black(205, 85, 205);
+}
+.post_infos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post_infos img{
+    width: 25px;
+}
+.post_infos div div,img{
+    margin-left:20px ;
+}
+.post_infos div div:nth-child(2){
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-right: 70px;
+}
+.post_infos div div:nth-child(3){
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left: 70px;
+}
+.contentimg{
+    all:unset;
+    width: 400px !important;
+    height: 300px;
+    max-width: 100%;
+}
+.icons{
+    display: flex;
+    width: 400px;
+    margin: auto;
+    justify-content: flex-start !important;
+    margin-top: 5px;
+}
+.icons i{
+    margin-left: 10px;
+}
+.icons i:nth-child(4):last-of-type{
+    margin-left: auto;
+}
+#col3{
+    width: 25%;
+    background-color: black;
+}
+.contact{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 30px;
+    color: white; 
+}
+.contact img,span{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 19px;
+}
+.last{
+    width: 300px ;
+    text-align: end;
+    color: rgb(64, 64, 206);
+    font-weight: bold;
+}
+.contact img{
+    outline: none;
+    border-color:white ;
+}
+.logo{
+    position: relative;
+    left: 40px;
+}
