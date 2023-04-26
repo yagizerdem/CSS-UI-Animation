@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar{ 
+    text-align: end;
+    height: 30px;
+    background-color: #2b3947;
+    display: table;
+    width: 100%;
+}
+#navbar > ul{
+    display: table-cell;
+    vertical-align: middle;
+}
+#navbar > ul > li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    color:white;
+}
+#navbar2{
+    background-color: #232b38;
+    overflow: hidden; /* overflow hidden is important to give height of element */
+
+}
+#navbar2 > a{
+    float: right;
+    padding: 20px;
+    color: white;
+}
+#navbar2 > a:first-child{
+    float: left;
+    color: white;
+    border: none;
+}
+#navbar2 > a:hover {
+    border-bottom: 3px solid red;
+    box-sizing:content-box;
+}
+.navbar2words{
+    position:relative;
+    top:17px;
+}
+#navbar2 > a button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+#background{
+    height: 400px;
+    background-color: #063048;
+}
+#header1{
+    padding-top: 140px;
+    width: 70%;
+    margin: auto;
+     display: flex;
+     justify-content: start;
+
+}
+#header1 > div{
+    margin-right: 20px;
+    height: 60px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100px;
+}
+#bilet{
+   width: 70%;
+   margin: auto;
+   height: 230px; 
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.biletheader.left{
+    float:left;
+    background-color: none;
+    margin-left: 10px;
+}
+.biletheader.right{
+    float:right;
+    background-color: none;
+    margin-right: 10px;
+}
+#ucusprop{
+    background-color: none;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.boxes{
+    background-color: #f4f6f8;
+    width: 17%;
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.boxes:last-child{
+    background-color: red;
+}
+#cards{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 230px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-width: 700px;
+}
+#cards div{
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-bg img{
+    width: 40px;
+    border-radius:20px;
+    margin-top: 10px;
+}
+.hovershadoweffect:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor:pointer;
+}
+#container3{
+    width: 70%;
+    margin: auto;
+    min-width: 800px;
+    overflow: hidden;
+
+}
+
+#container3 .holidays{
+    width: 48%;
+    float: left;
+}
+#container3 .holidays img{
+    width: 80%;
+    margin: auto;
+    height: 130px;
+}
+.rounded{
+    border-radius: 5px;
+}
+.kesfet{
+    background-color: red;
+    padding:10px;
+    margin: auto;
+}
+#slider_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider_container div{
+    margin:20px;
+}
+#logo_container{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+#lastcontainer{
+    display: flex;
+    justify-content: space-evenly;
+}

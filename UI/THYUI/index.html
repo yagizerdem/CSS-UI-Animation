@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div id="navbar">
+    <ul>
+        <li><i class="fa-solid fa-ellipsis-vertical"></i> Corporate Club</li>
+        <li><i class="fa-solid fa-ellipsis-vertical"></i> Miles&Smiles</li>
+        <li><i class="fa-solid fa-ellipsis-vertical"></i> Geri bildirim</li>
+        <li><i class="fa-solid fa-ellipsis-vertical"></i> Ara</li>
+        <li><i class="fa-solid fa-ellipsis-vertical"></i> TR-INT</li>
+    </ul>
+</div>
+<div id="navbar2" >
+    <a style="border: none;"><img src="https://cdn.turkishairlines.com/m/2190da9e53a70e4e/original/THY-LOGO.png" class="d-none d-lg-block d-xl-block d-xxl-block" height="40px" alt="THY LOGO" title="THY LOGO" ></a>
+    <a class="navbar2words" style="position: relative; top: 8px;">Üye ol <button type="button" class="btn btn-primary">Üye Ol</button></a>
+    <a class="navbar2words">Planla&Uç</a>
+    <a class="navbar2words">Seyahat Deneyimi</a>
+    <a class="navbar2words">Keşfet</a>
+    <a class="navbar2words">Yardım</a>
+</div>
+<div id="background" style="min-width: 700px;">
+    <div style="color: white; text-align: center; padding-top: 100px;">
+        MERHABA,<br>
+        Nereyi keşfetmek istersiniz?
+    </div>
+    <div id="header1">
+        <div><i class="fa-solid fa-plane"></i>Uçak</div>
+        <div><i class="fa-solid fa-couch"></i> Check-in / Bilet yönetimi</div>
+        <div><i class="fa-sharp fa-solid fa-plane-departure"></i> Uçuş durumu</div>
+    </div>
+    <div id="bilet">
+        <br>
+        <div style="overflow: hidden;">
+            <div class="biletheader left"><input type="radio"> Gidiş-Dönüş</div>
+            <div class="biletheader left"><input type="radio"> Tek yön</div>
+            <div class="biletheader left"><input type="radio"> Çoklu uçuş</div>
+            <div class="biletheader right"deneme><i class="fa-solid fa-ticket"></i> &nbsp; Ödül bilet - Millerinizle bilet alın</div>
+        </div>
+        <br>
+        <div id="ucusprop">
+            <div class="boxes">
+                <div>Nereden</div>
+                <div><b>İstanbul</b></div>
+                <div>İstanbul</div>
+        </div>
+            <div class="boxes">Nereye</div>
+            <div class="boxes">Tarih</div>
+            <div class="boxes">
+                <div>Yolcular</div>
+                <div><b>1 Yolcu</b></div>
+                <div>ECO</div>
+            </div>
+            <div class="boxes" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">Uçuş ara &nbsp; <i class="fa-solid fa-arrow-right"></i> </div>
+        </div>
+        <br>
+        <div style="margin-left: 20px;">
+            <b>Önceki aramalarım</b>
+        </div>
+    </div>
+</div>
+
+    <div id="cards" >
+        <div style="    border-right:1px solid rgb(97, 92, 92);"  class="hovershadoweffect">
+            <div class="icon-bg">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAe1BMVEX///8AAAAzMzObm5uDg4MLCwsPDw/j4+P09PT4+PgFBQUZGRlXV1fu7u5tbW2VlZUmJiYgICA8PDx8fHzKysqqqqpdXV1oaGhOTk6MjIzd3d1ycnLFxcVDQ0Ourq5gYGDU1NQtLS24uLgyMjI6OjrPz8+amppJSUmjo6OhsNVsAAAF0klEQVR4nO2diWKqOhCGca3ihvtSVLS19v2f8Oo9slT9SVJIxv8cvgdo5yswhMxM6nkVFRWl0Hl7Tlc6MEPCXu05Z+nIzDi1gEet9i4dmxFb6FGr7aSDM6GdI9IbSEdnAL6zLvSlozMgV6QWSoenT75IXTo8ffJFanPp+LRRiPBcEoUIz1OiEllIB6iLSqTNsuRSidC83pUiS+kINVGKHKQj1EQpUiNZcKlFSBKwWuRbOkQ91CJT6RD1UIsMpUPUQy2ylw5RD7UIydeVWoTkjagWIdlMUYuspUPUQy1CsmpUi0TSIeqhFGlLR6iJUmQlHaEmSpGRdISaqER8klW8UoTlzvpntoO20vFpoxCZScenTb4IybfIlVyRoCMdnj55Iu1IOjoDckT8o3RwJmARLg/vAEVIvkNimlCEZNMhprtAIj3p0Ezpoh6Ok3Rkpuz/jofE8+ZAhGeddWPgPxfxid7rf/gEl4Rk/yQFpWCSPcaUGRAZSwdmDOp1iqQDMwW9FOkS8DcQIWtrvCRgIOKztD0k1IEJ10r+whSIEH2z/yEEIoF0YMagBLyRDsyUPhBh2cJOaAARmq3fmDcg0qJLwAdgQpeA34EISXE65QhEWPrOErpop+5NOjJTVkDkSzowU0ZAhC4Bb4AITeNvQgBMaKqIMSgBk7QCpqAE/CEdmCl/TwI+AxGSftkUlIBJmhpTYAKWDsyYMTChS8BLIEKXgHdAhGdi7EYHFEpYJi9S0AQyXQJeAxGa0beYCIjQVaphAqarVKME3JQOzBSUgCfSgZkCK9VFEvBgcwrDcBY5TeITcEl+Mw4+mO3Ww3OQ/m38YDU9Oireo0q1SavQW/jdXJ4D8Hnjb0cuLs0JiGgk4O5VYL8N0PIgpTV08K2GWoUiLLA5NqaLyVgtkFGxX65AhZLHSnUnOo6m/U9krsBuW1t3C49JSVuFBqfd6H1VzztQRQe73wYH+Hv9zmA2Xw9Xh6ICyQ+0WtVD1d3rLy5JIMFqWwWq7trA6p5Gt6wbRwO7pW9UXCif1tjq7viX1eD93sd58b5uHGcb2ysVVN0tEvxhuxg2G7vQevA/QMUF4+D7w+bXLnS75M2Cigtq2sGkv5yO5oLBZ0HFBRj86hr8MXq5LXtYXMgSLKfr7+PptU9ARMWFDPWXuHdUoOJCypajQxsVFxJWL31DZVAk4P5vPETch7keJm3mnU24ay4+x9f80ep9rN4bka2gn5GbgNXNQtfoR9Pl6vPp7kN79e3sCYPFhRrecUyiH6uzt793tQGbc7zpj9feYBPOdaP/Sd9NzycqLlw47xf983ZSPwTjXpFPxpaTrntUXCiVXyU/U1BxoVRctE+h4kK5OChVoOJCudjdD/qfvARcIg4aWFFxoVwclO9zEnCJOCixouJCubho1vnlFvvriaA5ZDoRNIdMJ4Kqu3QicA6ZTgQfBUEmguaQ6URcJGA3IvBwDjYRNIdMJ4LmkOlE4BwynUhOpZpLxH6l2lWruvVKtSsR1F5DJzKbR3ZX8w6nIOyu5h2K2F3Nu5xLsbqd4lLE6mrepYjV1bzTkSebq3mnIjZX805Fdv1zPSVzfdr1wsgdDTdIRQ50B6ZkSesmE47mB0BakqtTe6SryDFFUw0kaVLxec6XfkryyUg3p3RHXOsNWLqDAEnxh+4Yyjvichzd0TX3xD3aDelAinJ7RFrcrxDP694uCN3Y7j3xW4Tn37oC4k8s7pe6l2w88p13eM9NhO5spwdutxbd9PEDt4ed7yzje27pl++82QduL0TyJbyXfFbRHST0QDzFEEkHUpR4jIzufP8H4g1tutNe7omLJS3qLa0L3Xiw5MC+3kqaISbsL5Ok7EMyZQXZJOMVHy83dmhG2mnTozvQ+CeZvo4l9yOfKfz0RszPfCc7E9ebNgsgrTIqqfbuS4t4s1JG3l9AxOtOy7goLyByWQkvi6u8hMhFpVn0BnsRkQuzRjGk46+oqKioqKioKMB/BCtPKErQEJwAAAAASUVORK5CYII=">
+            </div>
+            <div>
+                Koltuk Seçimi
+            </div>
+        </div>
+        <div style="border-right:1px solid rgb(97, 92, 92);" class="hovershadoweffect">
+            <div class="icon-bg">
+                <img src="data:image/png;base64,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">
+            </div>
+            <div>
+                Extra Bagaj
+            </div>
+        </div>
+        <div style="border-right:1px solid rgb(97, 92, 92);" class="hovershadoweffect">
+            <div class="icon-bg">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAACPj4/c3Nz29vYcHBxTU1MEBATT09Pt7e1XV1f6+vrz8/N7e3vKysrExMRgYGDl5eW3t7dlZWWhoaF5eXlwcHCJiYkoKCgVFRWwsLCVlZVOTk6ioqIODg6+vr48PDwzMzOCgoJFRUUjIyMhYkOcAAAENklEQVR4nO2c2ZaiMBRFRUFAVBBxRBGs/v9vbAYBQSit1pMU6bMf6oG1Ss82kuEmMhoRQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQiQSzrWXLDoHE1zLW44kuOwmKq1ayCNRsylVuZxaSkS87DgLnXDejFqnZjCN9Fa6NoiFXsrPgWBb3ouwYOKwoE9zIjoHD0ig4bJS6B/318aG7VErwkqocppeGpJ4LbmVF+jC7YmA31st6aHfzS/utGkPhpJq97K/O7ZpTXtpOpGb7EJN6irYrr9m78pKnhOPIXRQ6X/UlPSjnpaqsocLMxm1cOhu5oiUp0afZZE3otC4ev9KVsJQ4nydfEz4uBR3LbVsPlexGjFW547rIm/AoOwWSvC9dZqjSr7RY1UULLVHlxmtwvDPULrLTIHDvDdWYxORMapdwVnGWmOizzNOppzo2HVhJ9o2cy46BY1xUtRWt9qajw/7Wq6hq6Ff9pqKGRRUmMhU3XC8VbsNREB3C0Vxlw5GdjhL2bbSYB+7zfxgkueExzCoVoewsGOyyPzW1RM2BvzIcYHHbdgP3eRdSGc6uQ2vC4yGNbTztPpxZttz1/OEtlsq13tNyhB0Gy0HWnk43w1h2EBT1RovsJCgqQ3OQ38AXoOHwoeHw+ZHhB8vb4irl3xg6Xc7+7GD8O8lpcT4K3uroMVzu9sYhMoxrcz8wn7q9zeHkCzy10WnoftVxkvtNtF1X4H+S9JYSDe11M820+sD1fTvpG5wEOT4aTpJ2FrO8c6wPCqYshCzDHgxts6WX/ZlADDVDRDM+GMZdUf5gDIWUfNqGYXeSDchQu4o2nHfGMG/fU4Ah/shmy7CnCW9BEIbwL2rT0Jn25YjnKEP0qZWm4ao/hwUzBP9Co2k46Y9xwRnG0Gl40/DYH2MMMzTz1xZkeO7PcYUZatgTK01Dvz9EiDT0hBl+cx+6MMNsXgicvv2GvjRlKspw5PVFAI6HObg7sWUY9CXAzWkKcPPTlqHTl8AGG+I2Fdpri54RsZg8Ig1hc7eH9eGp6+0THW4IO+P/YOh01WJuW8RIQw1VkX6s0+hJ+73Ncg8caog6xNJRa3M21a/rc7yqYAQ1RPWmnfVS625YvC/6QQ2noBVGT817Hl5j4xBvwsbaDWqIOlLWv2/h6Hr7U8UagqY1P9p7whoGyhuCjlpVhtELNzrWEDTm1yvC6XM65zsfA9SZfrPmFU2C6Ux/keEBU1X8RYag4YKGIqEhDWkoHxrSkIbyoeGbhuZYFqYoQ8jLv4IwQ1mnoHUavgkN8dDwXWiIh4bv8j8ZynqilQM2nJcn1yPIy79CdEsQg36cUJ4Rkvd8ueKAi4naXSsf/C/zGcDFs0KBp/Zdz1sL+xVSJ8u156n6PBFCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBAx/AVx/DkmNu2h3QAAAABJRU5ErkJggg==">
+            </div>
+            <div>
+                Otel rezervasyon
+            </div>
+        </div>
+        <div style="border-right:1px solid rgb(97, 92, 92);" class="hovershadoweffect">
+            <div class="icon-bg">
+                <img src="data:image/png;base64,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">
+            </div>
+            <div>
+                Seyahat sigortası
+            </div>
+        </div>
+        <div style="border-right:1px solid rgb(97, 92, 92);" class="hovershadoweffect">
+            <div class="icon-bg">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAACcnJzHx8f39/cmJibMzMzc3Nzl5eXi4uLr6+uRkZGKiorPz8/Z2dn8/PwvLy/BwcGhoaG3t7dOTk46Ojrq6uo/Pz9jY2NtbW2tra2EhIQdHR1ISEgODg51dXUWFhZYWFiwsLB7e3tubm5VVVUpKSmWlpZkZGQ4U3MWAAAE0UlEQVR4nO2daZuiOhBGjUZFFBVR3G2XXvz/v3C0Z6YflgRSpBKce9/zsdvEOoKppEDS6QAAAAAAAAAAAAAAAAAAAAAAAAAKZBqkcmbVgwxGo8CuDzfMot1mveqfxKk/X28WvYDehRzstuv+QTx49PGWTPmjbE78IYocxqQIw8Wx1IXYN/icXCAnp3JwT06TkWEPu7W6B7GM3cZuxPWsie7JZVDfQTo5VPSwCd0rVCKXFdE9WdU4yreaDsTOj4mGQHOC5o5jWtHBrr69mHjTKTM1iO/BWDf491ZG7W9epbKkBkfwm5V6yJkYNm/vKOpGQAXXcuuQ0LylIXVhHqEQW1lonVBan4utvTCjhCjEPD/skz6ex1e5DUNijOI0zDQeExuLNgznRYPLIulFcbLYfGqijH7a3jQfwnKfJIMovt6KnYvEv2AhUxzjTEoYJRelwd/sv1H9cz6JMt+2oDDQXrzKfZPP1d3ivwPlefh7Nv6u+M+lV0yao1yy7PtwypObbakGAtlViDxXC/vynz9UC5Ew9xLDWTwj2TPtrH6JLB+sg1SMUH1NurtmX+R/uZidcmvnHL3SsuEjLgnudZO63EGMNC9yR9ZwoX2VvJSEilSMkq9jWJWPv6r95hXrP9mu4T379uOKOK+igmNFzWmQS4r+v4eFEXHb00pWrAGXuvnmbNgtTMz9r/VLI8ZptX1MaqbhM5QwTKPpIE52k/tx3tcbnj9Xl1s3ieNpNPxuKMPhY0qzX5barLwLdqTp4pAH/WDmjtoCCytVpRBXhPVh8dFOIUM1K3NEOyvgTmfrzbC1Cr8vRf/Z/gfjapkNn8P6QNwxNat42uC3lCjTIE+akisuNNaDsPCWQejs6mJ4vVsesc/3bhSP3wiFUiWr99jF2BpaZvhNMv25tCtHtl/gE3t5UVqfjPlp18C2O+46eGA/oORrVT17Q7FnFIwY4uE3FNuXEnRhKDZMggFLNC4My2XaRkiepO7EkGc+x5TS3RgeGQS5loFuDDlyhuoiQxMcGdrXb9hW8o4MhfXCw+R2ECNcGVqXqC5ckbgytD1Npe56LhlXhsJymcGT7Z84M7Ss4YzYAnFmaHBzYBWG93UZ4MywZ2fIsI77AwwbA0MYsgUCw8bAEIZsgcCwMTCEIVsgMGwMDGv4768P/4Eqhm05UfO7ATqvWmtT3nfeiC83hgeGW1GCa5eBr/xVotEXR6fdbtLS7WAAAH448n7+Fp/y70roWKb6HEOGePjzoWU5H4ZkYEgHhjCEIRUY0oEhDGFIBYZ0YAhDGFKBIR0YwhCGVGBIB4YwhCEVGNKBIQxhSAWGdGAIQxhSgSEdGMIQhlRgSAeGMIQhFRjSgSEMYUgFhnRgCEMYUoEhHRjCEIZUXtuQ4xGfr21I3MxRCb8h654QVbsaG8JvyLrX3L3+/epgN+TdL5BhSxl2Q97NddIXNOT8oXOHY0cZdkNeQYYntXIbsm/iZb1nDrPhgX0rlpltwmA2dLB7ru3ThngNOXfv+MFylwtWw6ULwcf82+pE5TS8uxE02jbVi6HLbciT5o9oZzM8Ot6FbVfaE9yv4Zp3EyQlYXJf98mci/s90bvor7f+Hnwl6eQz9KxBD3isFwAAAAAAAAAAAAAAAAAAAAAA/O/5BWJFcifS3NnfAAAAAElFTkSuQmCC">
+            </div>
+            <div>
+                Gift card
+            </div>
+        </div>
+        <div class="hovershadoweffect">
+            <div class="icon-bg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDTIJni-VTHzResq52HgdGYWnB5EkzDO8BKUlQoEA&s">
+            </div>
+            <div>
+                Araç kiralama
+            </div>
+        </div>
+    </div>
+    <br><br><hr><br><br>
+    <div id="container3">
+        <div class="holidays" style="padding-right: 2%; border-right:  1px solid grey; box-sizing: border-box;" >
+            <span>Turkish Airlines Holidays ile sekiz kat Mil kazanın!</span>
+            <hr><br>
+            <div style="display: flex;"><img src="https://cdn.turkishairlines.com/m/d92f66e57ba4691/original/Holidays-2li.webp" class="img-fluid rounded"></div>
+            <div style="width: 80%; margin: auto; margin-top: 10px;"><button class="kesfet">Keşfet</button></div>
+        </div>
+        <div class="holidays" style="padding-left: 2%;">
+            <span>İstanbul'da Stopover: En keyifli sürpriz!</span>
+            <hr><br>
+            <div style="display: flex;"><img src="https://cdn.turkishairlines.com/m/6567c2abf22cf697/original/Stopover.webp" class="img-fluid rounded" alt="Stopover" title="Stopover"></div>
+            <div style="width: 80%; margin: auto; margin-top: 10px;"><button class="kesfet">Keşfet</button></div>
+        </div>
+    </div>
+<br><br>
+<div style="text-align: center; font-size: 25px; font-weight: 500;">
+    Özel fırsatlarla yeni şehirlere!
+</div>
+<div style="text-align: center; color:red;font-size: 18px;">
+    Tüm kampanyaları göster  <i style="font-size: 0.73rem;" class="fa-solid fa-angles-right"></i>
+</div>
+<br><br><hr><br>
+<div id="slider_container">
+    <div style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnsbvXcxiPqm39RZBG8DObWej5t_bdSZCnw&usqp=CAU" alt="">
+        <div style="text-align: center; font-weight: bold; font-size: 18px;">
+            Lorem, ipsum dolor.
+        </div>
+        <div >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores iusto incidunt ipsam!
+        </div>
+    </div>
+    <div style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnsbvXcxiPqm39RZBG8DObWej5t_bdSZCnw&usqp=CAU" alt="">
+        <div style="text-align: center; font-weight: bold; font-size: 18px;">
+            Lorem, ipsum dolor.
+        </div>
+        <div >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores iusto incidunt ipsam!
+        </div>
+    </div>
+    <div style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnsbvXcxiPqm39RZBG8DObWej5t_bdSZCnw&usqp=CAU" alt="">
+        <div style="text-align: center; font-weight: bold; font-size: 18px;">
+            Lorem, ipsum dolor.
+        </div>
+        <div >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores iusto incidunt ipsam!
+        </div>
+    </div>
+</div>
+<hr>
+<div id="logo_container">
+    <div><img src="https://cdn.turkishairlines.com/m/54deaaa16552ddf1/original/01-1.png" class="brand"></div>
+    <div><img src="https://cdn.turkishairlines.com/m/54deaaa16552ddf1/original/01-1.png" class="brand"></div>
+    <div><img src="https://cdn.turkishairlines.com/m/54deaaa16552ddf1/original/01-1.png" class="brand"></div>
+    <div><img src="https://cdn.turkishairlines.com/m/54deaaa16552ddf1/original/01-1.png" class="brand"></div>
+</div>
+<hr>
+<div id="lastcontainer">
+    <div><img src="https://cdn.turkishairlines.com/m/3410c74a8a1008a5/original/Turkish-Airlines-Star-Alliance.jpg" class="brand" alt="Turkish Airlines Star Alliance" title="Turkish Airlines Star Alliance"></div>
+    <div><img src="https://cdn.turkishairlines.com/m/21ccde567da99a75/original/Champions-League-Logo.png" class="brand"></div>
+    <div><img src="https://cdn.turkishairlines.com/m/46cee618452c651d/original/Euroleague-logo.png" class="brand"></div>
+</div>
+
+</body>
+</html>
