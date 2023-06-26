@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap-grid.min.css" integrity="sha512-EAgFb1TGFSRh1CCsDotrqJMqB2D+FLCOXAJTE16Ajphi73gQmfJS/LNl6AsjDqDht6Ls7Qr1KWsrJxyttEkxIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header style="position: fixed; width: 100%;" >
+        <div class="header" >
+            <div>
+              Amazon
+            </div>
+            <div>
+                <div><span> deliver to</span> </div>
+                <div><pre><i class="fa-solid fa-location-dot"></i> <span id="turkey">Turkey</span> </pre></div>
+            </div>
+            <div id="header_input">
+                <div class="input-group mb-3" style="margin-bottom: 0px  !important;">
+                    <span class="input-group-text">All</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  </div>
+            </div>
+            <div style="flex-direction: row;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAjVBMVEXjChf////iAAD0u7zjABHjAA7jBRTjAAviAAXoVVn40NHwnZ/97/DvkJL74+TxpKbmNjzuiYzkJCz40tP+9vbyqqz63+D0trjtf4L86urmPkTkGSPsdnn52NnnTFHqZmrzsbPpXGD2xcbseX3rcXTlLzbmO0HwlpnnRkzujI7pYGT3yMrkFiDpWV3kISlKFajKAAAEG0lEQVR4nO3d23qiMBQFYNhGwCNKtdZDrVp7sq3v/3gTxNZ2skGxUUJY/50z83XiKoQdEoLjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAtXjCj9W9ohtiBEGxoDdfbpaNyXT3qV50owrkye+/nQ2bY/dgcD/qv8o/F0U3rhDyi69rbZfV7EREVTuR5Cmzfufz2Ot2BPlFN/OKBDlhZiCJ1ZyCopt6JR5NRyckErv/rEaHS7Q4MZFdKhP7+xVBdzkSiY2Iim70ZdH2Pmck0oPVhwrNTgphMPj9uWZvryKodiSMZvg4dygxWbdWX+XLOLL0/PH9blYe3VZcv5K/P0+8evwp6t8kf/tpZSgUDTISGfbYcY6s7eqd3dHyaGEo1MvoP/oZAz85Ktrcyn/0Zl0oWZG8HbvaBrSR48SOZaH4UWoiJ9UfAXVc986qUESQ1pcMGicWH7S9dTc2hUK3KZHcnF6kCgrdnj0jZUob84W5KlRau9ZUtPK78PJ2ENRoWnL2iI+USGa5vyDNLelnKWXYd04VFkym+ht4ffTIR/Jy1m/cinvXHvGR1Ow4Cc5CQzaSsZZIRCkPG+Hwh0mk444ILZwyXptTbr7qGdDR6qaEZ6Dns5F09XwVqrn98oVCLTaTVz01enzfrnzlPrFjv3dNv9w4k3bZyv3ggT1MeppuOe/u75btok4rLhJtg5bknve6XKHw9dqnri5gPw8w/b9KEQZPk/GnTltbg/eZ/L6K1Ymi1sLYUPjipKU7Ezf8/okykF6r67qesR0vjblMdPWwh0zcxi4Un2gS7v5Lc2eDPHHZU+eQyYA8Gch8uJ83HBobSUp3MrpAJvJS1lh8l0KaquSL4ItYjRN6P+aff9aGW4Nn3Pnq5Enf+J6fk89/S/OK+BkMfS322PkAs+tadrCj62SPF9fOmIUKho9/2CpWy/gvDuSuyf1499nocbJX59r898tOXLl/LUtRGL76QDxxjQ7/1mgZyLSTvibO9Ptu9Weu1X+q7D2KXtKmnmMDszsTmcmEa/Z50zoJb5q9Ht381Rg4TlToT1S47jBQn6hQx6ow3lFhXKwq7P6JwasNcJ9NhfuxDNy3V2F+R4V5QAY/X7ys8nwx1hUwsP6EgXVKKqxnU2HdIwPrY1Vp66ifKryO2iF+p5Mqr7fHcxkcPL/DwHNeKjwPyMBzoww8X8zAc+gqwY8F3SrvV+D425RM4kKlmvtaaNn/xPTp8fywTw7j+H5KTAdq935Ksk8JsO+WItf+bEEl9mdzsI8fi6bY71GBfUE5OfePfbb8IElgn2FOvB91VrGyt5pXapduD/uWc7C/PSd5D0L46z0I7Uq/ByGRvC+DevPlctmYfFT+fRkHeK8KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBd/gGdWzmvdW3tugAAAABJRU5ErkJggg==" width="20px" > &nbsp; &nbsp; TR</div>
+            <div>
+                <div><span> Hello sign in ,</span> </div>
+                <div><pre> <span id="turkey">Accounts & List</span> </pre></div>
+            </div>
+            <div>
+                <div><span> Returns ,</span> </div>
+                <div><pre> <span id="turkey">& Orders</span> </pre></div>
+            </div>
+            <div>
+                <span><i class="fa-solid fa-cart-shopping"></i> &nbsp;Card</span>
+            </div>
+        </div>
+    </header>
+    <div class="header2">
+        <div><i class="fa-solid fa-bars"></i> All</div>
+        <div>Today's Deals</div>
+        <div>Customer Service</div>
+        <div>Registry</div>
+        <div>Gift Cards</div>
+        <div>Sell</div>
+    </div>
+
+    <div id="background-imgcard" class="container"></div>
+
+   <section>
+    <div class="container maincontainer">
+        <div id="header3">
+            <p>You are on amazon.com. You can also shop on Amazon Turkey for millions of products with fast local delivery. Click here to go to amazon.com.tr</p>
+        </div>
+        <div class="main-card-container">
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+        </div>
+        <div class="main-card-container">
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+        </div>
+        <div class="main-card-container">
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+        </div>
+        <div class="main-card-container">
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+            <div   data-a-card-type="basic"><div class="a-cardui-header"><h2 class="a-color-base headline truncate-2line">Some Product</h2></div><a class="a-link-normal ffil-merge-links" href="http://yagizerdem.com"><div class="a-cardui-body"><div class="a-section center-image aok-block image-window"><div class="a-section a-spacing-none fluid-image-container"><img alt="Toys Under $30" src="https://raw.githubusercontent.com/yagizerdem/CSS-UI-Animation/main/img/EmptyProductimg.jpg" class="landscape-image" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_758x608_2X_en_US._SY608_CB609318944_.jpg"></div></div></div><div class="a-cardui-footer"><span class="see-more truncate-1line">Shop now</span></div></a></div>
+        </div>
+    </div>
+   </section>
+
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://yagizerdem.com/">yagizerdem.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+</html>
