@@ -1,0 +1,93 @@
+.frame{
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.row-1 , .row-2 , .row-3{
+    width: 150px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+.row-1{
+    top: -30px;
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.row-3{
+    top: 30px;
+    animation-name: animation2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.row-2{
+    animation-name: goleft;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation1 {
+    0%{
+        top: -30px;
+    }
+    50%{
+        top: 20px;
+        transform: rotate(0deg);
+    }
+    80%{
+        top: 20px;
+        transform: rotate(50deg);
+    }
+    100%{
+        top: -30px;
+    }
+}
+@keyframes animation2 {
+    0%{
+        top: 30px;
+    }
+    50%{
+        top: -20px;
+        transform: rotate(0deg);
+    }
+    80%{
+        top: -20px;
+        transform: rotate(-50deg);
+    }
+    100%{
+        top: 30px;
+    }
+}
+@keyframes goleft{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-50deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
