@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #1D2236;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden ;
+    background-image: url("https://img.freepik.com/free-vector/terrace-rooftop-rainy-dull-weather-with-city-view_107791-6282.jpg");
+    background-size: cover;
+
+}
+.yagmurtanesi{
+    width: 20px;
+    height: 60px;
+    background-color: blue;
+    clip-path: polygon(49% 78%, 0% 100%, 100% 100%);
+    border-bottom-left-radius:20px 40px ;
+    border-bottom-right-radius:20px 40px ;
+    transform: rotate(30deg);
+    transform-origin: center;
+    position: absolute;
+}
+.y1{    
+    left: 300px;
+    top: 40px;
+    animation-name: drop;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y2{
+    left: 100px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y3{
+    left: 130px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y4{
+    left: 350px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y5{
+    left: 250px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y6{
+    left: 170px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y7{
+    left: 270px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y8{
+    left: 50px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y9{
+    left: 46px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y10{
+    left: 53px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y11{
+    left: 69px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y12{
+    left: 230px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y13{
+    left: 1560px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y14{
+    left: 222px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y15{
+    left: 280px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.y16{
+    left: 300px;
+    top: 10px;
+    animation-name: drop;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes drop {
+    0%{
+        transform: rotate(30deg) ;
+    }
+    80%{
+        top: 345px;
+        transform: rotate(0deg) scale(1) ;
+    }
+    100%{
+        top: 370px;
+        transform: rotate(0deg) scaleX(8) scaleY(0);
+    }
+}
+
