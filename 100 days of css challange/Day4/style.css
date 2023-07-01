@@ -1,0 +1,78 @@
+.frame{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #E56262;
+}
+#circle1{
+    animation: ani1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-color: rgb(251, 251, 251);
+    position: absolute;
+    border-radius:1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#circle2{
+    animation: ani2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-color: rgb(251, 251, 251);
+    position: absolute;
+    border-radius:1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#circle3{
+    animation: ani3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-color: rgb(251, 251, 251);
+    position: absolute;
+    border-radius:1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+ @keyframes ani1 {
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+    }
+} 
+
+ @keyframes ani2 {
+    0% , 20%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 140px;
+        height: 140px;
+    }
+} 
+@keyframes ani3 {
+    0% , 60%{
+        width: 0px;
+        height: 0px;
+    }
+
+    100%{
+        width: 70px;
+        height: 70px;
+    }
+} 
