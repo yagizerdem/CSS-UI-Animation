@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background:  #f6e8d7;;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden ;
+    }
+
+.shoe{
+    width: 100px;
+    height: 100px;
+    background-image:url("https://100dayscss.com/codepen/doc-martens.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.left_leg , .right_leg{
+    position: absolute;
+}
+.right_leg{
+   top: 200px;
+   left: 100px; 
+   transform-origin: 0px -50px;
+   animation-name: rightlegani;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+.left_leg{
+    top: 200px;
+    left: 200px;
+    animation-name: leftlegani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes leftlegani {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-20deg); 
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes rightlegani {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.right_shoe{
+    position: absolute;
+    animation-name: rightfoot;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes rightfoot {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 20px;
+        left:50px ;
+        transform: rotate(-10deg);
+    }
+    40%{
+        transform: rotate(10deg);
+    }
+    50%{
+        top:0;
+        left: 0;;
+    }
+    100%{
+        top:0;
+        left: 0;;
+    }
+}
+
+.left_shoe{
+    position: absolute;
+    animation-name: leftfoot;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes leftfoot {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 0;
+        left: 0;
+    }
+    75%{
+        top: 20px;
+        left:50px ;
+        transform: rotate(-10deg);
+    }
+    90%{
+        transform: rotate(10deg);
+        top:0;
+        left: 0;;
+    }
+    100%{
+        top:0;
+        left: 0;;
+    }
+}
+.karatoprak{
+    width: 1000px;
+    height: 115px;
+    background-color: rgb(84, 112, 78);
+    position: absolute;
+    bottom: 0;
+}
